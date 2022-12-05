@@ -83,6 +83,18 @@ Conceal will start connecting to your password manager and fetches the needed se
 <img width="600" src="https://user-images.githubusercontent.com/4104127/205493816-22081f9e-d076-4297-8697-a0f07673da3e.png#gh-dark-mode-only">
 </p>
 
+## Roadmap
+
+- [ ] Integrate with Secret managers
+  - [x] [Enpass](https://www.enpass.io)
+  - [ ] [Vault](https://www.vaultproject.io/)
+  - [ ] [Lastpass](https://www.lastpass.com/)
+- [x] Ability to execute different command-line utilities (e.g. kubectl, oc, aws)
+- [x] Support for different environments (e.g. dev, prod)
+- [ ] CI/CD integration
+  - [ ] Github Actions
+  - [ ] Gitlab CI
+
 ## Usage
 
 ```
