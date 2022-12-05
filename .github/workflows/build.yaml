@@ -1,0 +1,19 @@
+name: build
+on:
+  push:
+    branches-ignore:    
+      - 'v**'
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+      - run: git fetch --prune --unshallow
+      - name: setup dependencies
+        uses: actions/setup-go@v2
+      - name: build
+        run: make build

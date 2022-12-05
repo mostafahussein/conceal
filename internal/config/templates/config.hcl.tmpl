@@ -1,0 +1,40 @@
+provider = {
+  name = "{{ .PasswordManager }}"
+  session_timeout = {{ .SessionTimeout }}
+  vault_location = "{{ .VaultLocation }}"
+  auth_secret = "{{ .AuthSecret }}"
+}
+
+# resource "profile" "k8s" {
+#   environment "default" {
+#     command = "kubectl"
+#     env = {
+#       id = "AWS_ACCESS_KEY"
+#       login = "AWS_ACCESS_KEY_ID"
+#       password = "AWS_SECRET_ACCESS_KEY"
+#     }
+#   }
+# }
+
+# resource "profile" "aws" {
+#   environment "default" {
+#     command = "aws"
+#     env = {
+#       id = "aws_dev_access"
+#       login = "AWS_ACCESS_KEY_ID"
+#       password = "AWS_SECRET_ACCESS_KEY"
+#     }
+#   }
+# }
+
+# resource "profile" "openshift" {
+#   environment "default" {
+#     command = "oc"
+#     args = "login -u $OC_USERNAME -p $OC_PASSWORD https://localhost:8443"
+#     env = {
+#       id = "openshift_dev_login"
+#       login = "OC_USERNAME"
+#       password = "OC_PASSWORD"
+#     }
+#   }
+# }
