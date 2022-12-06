@@ -186,6 +186,8 @@ The above block tells `conceal` the following:
 oc login -u $OC_USERNAME -p $OC_PASSWORD https://localhost:8443
 ```
 
+Note: If you want to pass specific arguments you need to define `args` like in the `oc` command example otherwise no need to add it.
+
 ### Supporting Multiple environments
 
 If `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` on development environment are different from the production environment, and you want to make conceal handle both environments, you can update your config like below
