@@ -213,7 +213,7 @@ resource "profile" "amazon" {
 }
 ```
 
-Note: You can switch between environments by passing `-p default` or `-p prod`
+Note: You can switch between environments by passing `-e default` or `-e prod`
 
 ### Adding command aliases
 
